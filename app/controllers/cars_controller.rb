@@ -3,4 +3,9 @@ class CarsController < ApplicationController
     @cars = Car.all
     render json: @cars
   end
+
+  def Show
+    @car = Car.find(params[:id])
+    render json: @car
+  end
 end
