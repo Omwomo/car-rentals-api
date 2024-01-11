@@ -7,7 +7,6 @@ class ReservationsController < ApplicationController
     else
       render json: { errors: @reservation.errors.full_message }, status: :unprocessable_entity
     end
-
   end
 
   private
