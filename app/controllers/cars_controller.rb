@@ -19,6 +19,11 @@ class CarsController < ApplicationController
     end
   end
 
+  def destroy
+    @car.destroy
+    head :no_content
+  end
+
   private
 
   def car_params
